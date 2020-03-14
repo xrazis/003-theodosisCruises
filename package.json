@@ -1,0 +1,28 @@
+{
+  "name": "003-theodosiscruises",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xrazis/003-theodosisCruises.git"
+  },
+  "author": "Haris Razis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xrazis/003-theodosisCruises/issues"
+  },
+  "homepage": "https://github.com/xrazis/003-theodosisCruises#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "express-sanitizer": "^1.0.5",
+    "node": "^13.10.1",
+    "nodemon": "^2.0.2",
+    "router": "^1.3.4"
+  }
+}

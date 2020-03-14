@@ -1,0 +1,84 @@
+html {
+  font-family: serif;
+  line-height: 1.65;
+  color: #263238;
+  background-color: #f2f2f2;
+  height: 100%;
+  display: block;
+}
+
+body {
+  font-family: serif;
+  line-height: 1.65;
+  color: #263238;
+  background-color: #f2f2f2;
+  margin: 0;
+  min-height: 100%;
+}
+
+#main-carousel {
+  height: 100vh;
+  width: 100%;
+  z-index: 1;
+  position: absolute;
+}
+
+#landing-text {
+  z-index: 2;
+  position: relative;
+  top: 40vh;
+}
+
+#overlap-container {
+  z-index: 10;
+  position: relative;
+  top: 70vh;
+  height: 100vh;
+  width: 90%;
+  left: 5%;
+}
+
+.carousel-image {
+  height: 100vh;
+  width: auto;
+  background-size: cover;
+  z-index: 1;
+  filter: brightness(80%);
+}
+
+.navbar {
+  transition: all 0.4s;
+}
+
+.navbar .nav-link {
+  color: #fff;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar .navbar-brand {
+  color: #fff;
+}
+
+.navbar.active {
+  background: #fff;
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar.active .nav-link {
+  color: #555;
+}
+
+.navbar.active .nav-link:hover,
+.navbar.active .nav-link:focus {
+  color: #555;
+  text-decoration: none;
+}
+
+.navbar.active .navbar-brand {
+  color: #555;
+}
