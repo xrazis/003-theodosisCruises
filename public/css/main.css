@@ -70,13 +70,14 @@ body {
 }
 
 #footer{
-  height: 5vh;
+  height: auto;
   width: 100%;
   position: relative;
   margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0rem;
   padding: 2rem;
   bottom: 0;
+  background-color: #fff;
 }
 
 
@@ -182,7 +183,7 @@ small,
 
 .moveup{
   top: -10rem !important;
-  margin-bottom: -10rem !important;
+  margin-bottom: -6rem !important;
 }
 
 .bmargin{
@@ -190,9 +191,14 @@ small,
 }
 
 .rounded-image{
-  height: 400px;
-  width: 400px;
+  max-height: 350px;
+  max-width: 600px;
   border-radius: 3%;
   border: none;
   padding: 0;
+}
+
+.dropdown-menu{
+  min-width: 1.5rem;
+  border: none;
 }

@@ -5,7 +5,7 @@ router.get("/", function(req, res){
     res.redirect("/index");
 });
 
-router.get("/index", function(req, res){
+router.get("/index", function(req, res, next){
     res.render("index");
 });
 

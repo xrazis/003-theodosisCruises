@@ -34,10 +34,13 @@
                         <a class="nav-link" href="/index">Home<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#cruises">Cruises</a>
+                        <a class="nav-link" href="/index/#cruises">Cruises</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Photos</a>
+                        <a class="nav-link" href="/photos">Photos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index/#contact">Contact</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="bookingDropdown" role="button"
@@ -45,27 +48,44 @@
                             Booking
                         </a>
                         <div class="dropdown-menu" aria-labelledby="bookingDropdown">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Blue Caves</a>
+                            <a class="dropdown-item" href="#">Blue Caves - Shipwreck</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Something else here</a>
+                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#termsModal">Terms and Conditions</a>
                         </div>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                    <li class="nav-item dropdown">
+                        <button class="btn dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-globe-europe"></i>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                            <a class="dropdown-item" href="?lng=en">EN</a>
+                            <a class="dropdown-item" href="?lng=el">EL</a>
+                            <a class="dropdown-item" href="?lng=ru">RU</a>
+                            <a class="dropdown-item" href="?lng=ja">JA</a>
+                        </div>
                     </li>
                 </ul>
-                <div class="dropdown">
-                    <button class="btn dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">
-                        <i class="fas fa-flag-usa"></i>
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                        <button class="dropdown-item" type="button">Action</button>
-                        <button class="dropdown-item" type="button">Another action</button>
-                        <button class="dropdown-item" type="button">Something else here</button>
-                    </div>
-                </div>
             </div>
         </div>
     </nav>
+
+    <div class="modal fade" id="termsModal" tabindex="-1" role="dialog" aria-labelledby="centeredModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="centeredModal">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary rounded-pill" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
