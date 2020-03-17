@@ -1,6 +1,11 @@
 {
-    "translation": {
-      "hello": "Hello in russian",
-      "welcome": "Welcome in English"
-    }
+  "translation": {
+    "home": "домашняя страница",
+    "cruises": "Круизы",
+    "photos": "Фото",
+    "contact": "связаться с нами",
+    "booking": "Booking",
+    "bcaves": "Blue Caves",
+    "shipwreck": "Blue Caves - Shipwreck"
   }
+}

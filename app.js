@@ -25,6 +25,10 @@ i18next
     .use(i18nextMiddleware.LanguageDetector)
     .use(FilesystemBackend)
     .init({
+      detection: {
+        order: ['querystring', 'cookie'],
+        caches: ['cookie']
+      },
         preload: ["en", "el", "ru", "ja"],
         fallbackLng: "en",
         debug: false,
@@ -33,7 +37,8 @@ i18next
             el: elTranslations,
             ru: ruTranslations,
             ja: jaTranslations
-        }
+        },
+        saveMissing: true
     });
 
 app.use(i18nextMiddleware.handle(i18next));

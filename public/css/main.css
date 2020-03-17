@@ -1,21 +1,24 @@
 html {
-  font-family: "Oswald", serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 300;
   line-height: 1.65;
-  color: #263238;
+  color: #595959;
   background-color: #f2f2f2;
   height: 100%;
   display: block;
+  bottom: 0;
 }
 
 body {
-  font-family: "Oswald", serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 300;
   line-height: 1.65;
-  color: #263238;
+  color: #595959;
   background-color: #f2f2f2;
   margin: 0;
   min-height: 100%;
+  padding-bottom: 10rem;
+  position: relative;
 }
 
 #main-content{
@@ -24,6 +27,13 @@ body {
 
 #main-carousel {
   height: 100vh;
+  width: 100%;
+  z-index: 1;
+  position: relative;
+}
+
+#cruises-carousel {
+  height: 50vh;
   width: 100%;
   z-index: 1;
   position: relative;
@@ -42,6 +52,26 @@ body {
 #image02 {
   background-image: url('/img/carousel02.png');
   height: 100vh;
+  width: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: brightness(60%);
+}
+
+#imageCruises01 {
+  background-image: url('/img/carousel01.png');
+  height: 50vh;
+  width: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: brightness(60%);
+}
+
+#imageCruises02 {
+  background-image: url('/img/carousel02.png');
+  height: 50vh;
   width: auto;
   background-size: cover;
   background-repeat: no-repeat;
@@ -70,16 +100,30 @@ body {
 }
 
 #footer{
-  height: auto;
   width: 100%;
-  position: relative;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  position: absolute;
   margin-top: 1rem;
   margin-bottom: 0rem;
   padding: 2rem;
-  bottom: 0;
   background-color: #fff;
 }
 
+#contact{
+  position: ;
+}
+
+a{
+  color: #262626;
+  text-decoration:none;
+}
+
+a:hover{
+  color: #262626;
+  text-decoration: none;
+}
 
 h1,
 h2,
@@ -90,6 +134,7 @@ h5 {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   line-height: 1.15;
+  color: #262626;
 }
 
 h1 {
@@ -144,6 +189,12 @@ small,
   color: #fff;
 }
 
+.navbar a.dropdown-item{
+  font-weight: 300;
+  color: #555;
+  background-color: none;
+}
+
 .navbar.active {
   background: #fff;
   box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
@@ -168,6 +219,11 @@ small,
 }
 
 .navbar.active .navbar-toggler-icon{
+  color: #555;
+}
+
+.navbar.active a.dropdown-item{
+  font-weight: 300;
   color: #555;
 }
 
@@ -201,4 +257,18 @@ small,
 .dropdown-menu{
   min-width: 1.5rem;
   border: none;
+}
+
+.tripadvisor{
+  color: #34e0a1;
+}
+
+.btn-blue{
+  color: #fff;
+  background-color: #1e88e5;
+}
+
+.btn-blue:hover{
+  color: #fff;
+  background-color: #005cb2;
 }

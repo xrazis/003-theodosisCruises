@@ -1,6 +1,11 @@
 {
-    "translation": {
-      "hello": "Hello in English",
-      "welcome": "Welcome in English"
-    }
+  "translation": {
+    "home": "Home",
+    "cruises": "Cruises",
+    "photos": "Photos",
+    "contact": "Contact",
+    "booking": "Booking",
+    "bcaves": "Blue Caves",
+    "shipwreck": "Blue Caves - Shipwreck"
   }
+}

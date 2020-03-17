@@ -1,6 +1,11 @@
 {
-    "translation": {
-      "hello": "Hello in greek",
-      "welcome": "Welcome in English"
-    }
+  "translation": {
+    "home": "Αρχικη",
+    "cruises": "Εκδρομες",
+    "photos": "Φωτογραφιες",
+    "contact": "Επικοινωνια",
+    "booking": "Κρατησεις",
+    "bcaves": "Γαλαζιες Σπηλιες",
+    "shipwreck": "Γαλαζιες Σπηλιες - Ναύαγιο"
   }
+}

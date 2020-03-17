@@ -1,7 +1,11 @@
 {
 	"translation": {
-	  "hello": "Hello in Chinese",
-	  "welcome": "Hello in Chinese"
-
+		"home": "ホーム",
+		"cruises": "弊社のツアー",
+		"photos": "写真",
+		"contact": "お問い合わせ",
+		"booking": "Booking",
+		"bcaves": "Blue Caves",
+		"shipwreck": "Blue Caves - Shipwreck"
 	}
-  }
+}
