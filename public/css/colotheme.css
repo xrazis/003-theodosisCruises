@@ -7,11 +7,16 @@
 .Bonpair-4-hex { color: #595959; }
 .Bonpair-5-hex { color: #262626; }
 
-/* material */
-.material01 { color: #6ab7ff; }
-.material01 { color: #1e88e5; }
-.material01 { color: #005cb2; }
+/* material primary */
+.material01 { color: #9e47ff; }
+.material01 { color: #6200ee; }
+.material01 { color: #0400ba; }
+
+/* material secondary */
+.material01 { color: #66fff9; }
+.material01 { color: #03dac6; }
+.material01 { color: #00a896; }
 
 .material01 { color: #ffffff; }
 
-.material01 { color: #262626; }
+.material01 { color: #000000; }

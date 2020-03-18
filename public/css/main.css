@@ -1,27 +1,19 @@
-html {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-  line-height: 1.65;
-  color: #595959;
-  background-color: #f2f2f2;
-  height: 100%;
-  display: block;
-  bottom: 0;
-}
-
+html,
 body {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 200;
   line-height: 1.65;
   color: #595959;
   background-color: #f2f2f2;
   margin: 0;
   min-height: 100%;
-  padding-bottom: 10rem;
+  padding-bottom:0rem;
   position: relative;
+  display: block;
+  bottom: 0;
 }
 
-#main-content{
+#main-content {
   position: relative;
 }
 
@@ -90,37 +82,42 @@ body {
 #overlap-container {
   z-index: 10;
   position: relative;
-  top: -2vh;
+  top: -4vh;
   width: 90%;
   left: 5%;
+  padding-bottom: 1rem;
   transition: all 0.7s;
   -webkit-box-shadow: 0px 10px 29px -11px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 10px 29px -11px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 10px 29px -11px rgba(0, 0, 0, 0.75);
 }
 
-#footer{
+#cruises-preview{
+  margin-top: 7rem;
+  padding-top: 0;
+}
+
+#footer {
   width: 100%;
   right: 0;
   left: 0;
   bottom: 0;
   position: absolute;
-  margin-top: 1rem;
+  margin-top: 0rem;
   margin-bottom: 0rem;
   padding: 2rem;
-  background-color: #fff;
+  background-color: #f2f2f2;
 }
 
-#contact{
-  position: ;
+#contact {
 }
 
-a{
+a {
   color: #262626;
-  text-decoration:none;
+  text-decoration: none;
 }
 
-a:hover{
+a:hover {
   color: #262626;
   text-decoration: none;
 }
@@ -163,6 +160,10 @@ small,
   font-size: 0.8em;
 }
 
+.josefin{
+  font-family: 'Josefin Sans';
+}
+
 .navbar {
   transition: all 0.4s;
 }
@@ -185,11 +186,11 @@ small,
   color: #fff;
 }
 
-.navbar .navbar-toggler-icon{
+.navbar .navbar-toggler-icon {
   color: #fff;
 }
 
-.navbar a.dropdown-item{
+.navbar a.dropdown-item {
   font-weight: 300;
   color: #555;
   background-color: none;
@@ -218,16 +219,16 @@ small,
   color: #555;
 }
 
-.navbar.active .navbar-toggler-icon{
+.navbar.active .navbar-toggler-icon {
   color: #555;
 }
 
-.navbar.active a.dropdown-item{
+.navbar.active a.dropdown-item {
   font-weight: 300;
   color: #555;
 }
 
-.carousel{
+.carousel {
   transition: transform 2s ease, opacity .7s ease-out;
 }
 
@@ -237,16 +238,20 @@ small,
   align-items: center;
 }
 
-.moveup{
+.moveup {
   top: -10rem !important;
-  margin-bottom: -6rem !important;
+  margin-bottom: -10rem !important;
 }
 
-.bmargin{
-  margin-top: 10rem;
+.bmargint {
+  margin-top: 6rem;
 }
 
-.rounded-image{
+.bigmarginb {
+  margin-bottom: 6rem;
+}
+
+.rounded-image {
   max-height: 350px;
   max-width: 600px;
   border-radius: 3%;
@@ -254,21 +259,25 @@ small,
   padding: 0;
 }
 
-.dropdown-menu{
+.dropdown-menu {
   min-width: 1.5rem;
   border: none;
 }
 
-.tripadvisor{
+.tripadvisor {
   color: #34e0a1;
 }
 
-.btn-blue{
+.btn-purple {
   color: #fff;
-  background-color: #1e88e5;
+  background-color: #6200ee;
 }
 
-.btn-blue:hover{
+.btn-purple:hover {
   color: #fff;
-  background-color: #005cb2;
+  background-color: #9e47ff;
+}
+
+.teal{
+  color: #03dac6;
 }

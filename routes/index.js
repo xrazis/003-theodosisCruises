@@ -13,4 +13,9 @@ router.get("/booking", function(req, res, next){
   res.render("booking");
 });
 
+router.get("/cruises", function(req, res, next){
+  res.render("cruises");
+});
+
+
 module.exports = router;

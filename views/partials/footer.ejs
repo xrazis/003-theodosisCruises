@@ -1,7 +1,7 @@
 <footer class="container-fluid row mx-0" id="footer">
     <div class="container centered col-sm-4">
         <a class="centered" href="#" data-toggle="modal" data-target="#termsModal">
-            <button class="btn my-2 my-sm-0 rounded-pill btn-blue">Terms and Conditions</button>
+            <button class="btn my-2 my-sm-0 rounded-pill btn-purple">Terms and Conditions</button>
         </a>
     </div>
     <div class="container col-sm-4"></div>
@@ -13,7 +13,8 @@
         <a class="btn btn-social " href="https://g.page/theodosiscruises?share">
             <i class="fab fa-google text-secondary"></i>
         </a>
-        <a class="btn btn-social" href="https://www.tripadvisor.com/Attraction_Review-g189462-d4916155-Reviews-Theodosis_Cruises-Zakynthos_Ionian_Islands.html?m=19905">
+        <a class="btn btn-social"
+            href="https://www.tripadvisor.com/Attraction_Review-g189462-d4916155-Reviews-Theodosis_Cruises-Zakynthos_Ionian_Islands.html?m=19905">
             <i class="fab fa-tripadvisor tripadvisor"></i>
         </a>
         <a class="btn btn-social " href="mailto: info@theodosiscruises.com">
@@ -26,13 +27,23 @@
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="centeredModal">Modal title</h5>
+                <h6 class="modal-title" id="centeredModal"><%= t('terms-header') %></h6>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
-                ...
+                <i class="fas fa-angle-right text-muted"></i> <%= t('terms-content01') %><br>
+                <i class="fas fa-angle-right text-muted"></i> <%= t('terms-content02') %><br>
+                <i class="fas fa-angle-right text-muted"></i> <%= t('terms-content03') %><br>
+                <i class="fas fa-angle-right text-muted"></i> <%= t('terms-content04') %><br>
+                <i class="fas fa-angle-right text-muted"></i> <%= t('terms-content05') %><br>
+                <i class="fas fa-angle-right text-muted"></i> <%= t('terms-content06') %><br>
+                <i class="fas fa-angle-right text-muted"></i> <%= t('terms-content07') %><br>
+                <i class="fas fa-angle-right text-muted"></i> <%= t('terms-content08') %><br>
+                <i class="fas fa-angle-right text-muted"></i> <%= t('terms-content09') %><br>
+                <i class="fas fa-angle-right text-muted"></i> <%= t('terms-content10') %><br>
+                <i class="fas fa-angle-right text-muted"></i> <%= t('terms-content11') %><br>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary rounded-pill" data-dismiss="modal">Close</button>
@@ -42,9 +53,9 @@
 </div>
 
 </body>
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-</script>
+<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
     integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
 </script>
