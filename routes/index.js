@@ -17,5 +17,8 @@ router.get("/cruises", function(req, res, next){
   res.render("cruises");
 });
 
+router.get("/photos", function(req, res, next){
+  res.render("photos");
+});
 
 module.exports = router;

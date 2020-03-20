@@ -1,9 +1,9 @@
 <%- include("partials/header.ejs") %>
 <div id="main-carousel" class="carousel slide carousel-fade" data-ride="carousel">
     <div class="carousel-inner">
-        <div class="carousel-item w-100 active" id="image01">
-        </div>
+        <div class="carousel-item w-100 active" id="image01"></div>
         <div class="carousel-item w-100" id="image02"></div>
+        <div class="carousel-item w-100" id="image03"></div>
     </div>
 </div>
 
@@ -16,19 +16,14 @@
 <div class="rounded bg-light" id="overlap-container">
     <div class="container pt-5 mt-4">
         <h2 class="centered col-sm-12 col-md-12 mb-5">Who are we</h2>
-        <p class="container centered text-center col-10">Theodosis Cruises is a family business located at the
-            harbor of
-            St. Nicholas in Volimes, Zakynthos. It
-            organizes cruises to the Blue Caves and the Shipwreck and private trips for those wanting to enjoy the
-            beauties of Zakynthos with privacy.
-        </p>
+        <p class="container centered text-center col-10 text-ns"><%= t('whoarewe') %></p>
     </div>
 
-    <div class="container mt-4">
+    <div class="container bmargin" id="tour-icons">
         <div class="row centered d-flex align-items-start" id="cruises-preview">
             <!-- <h3 class="centered col-sm-12 col-md-12 mb-5">Group Cruises</h3> -->
             <div class="centered row col-sm-12 col-md-4 mb-5">
-                <i class="fas fa-water fa-3x teal"></i>
+                <i class="fas fa-water fa-3x teal" id="tour1"></i>
                 <h5 class="centered col-sm-12 mt-4 josefin"><%= t('bcaves') %></h5>
                 <p class="text-center col-sm-8"><%= t('bcaves-subheader') %></p>
             </div>
@@ -66,8 +61,10 @@
         </div>
         <div class="col-12 centered">
             <div class="row">
-                <small class="col-12 col-md-6 text-center text-muted">Address: St. Nicholas - Volimes, Zakynthos, Greece</small>
-                <small class="col-12 col-md-6 text-center text-muted">Telephones: +30 6942473757 and +30 6947329835</small>
+                <small class="col-12 col-md-6 text-center text-muted">Address: St. Nicholas - Volimes, Zakynthos,
+                    Greece</small>
+                <small class="col-12 col-md-6 text-center text-muted">Telephones: +30 6942473757 and +30
+                    6947329835</small>
             </div>
         </div>
     </div>

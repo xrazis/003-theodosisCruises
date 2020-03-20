@@ -7,10 +7,67 @@ body {
   background-color: #f2f2f2;
   margin: 0;
   min-height: 100%;
-  padding-bottom:0rem;
+  padding-bottom: 0rem;
   position: relative;
   display: block;
   bottom: 0;
+}
+
+@media (max-width: 991.98px) {
+  #navbarSupportedContent {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100vh;
+    background-color: #fff;
+    -webkit-box-shadow: 0px 10px 29px -11px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 10px 29px -11px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 10px 29px -11px rgba(0, 0, 0, 0.75);
+  }
+
+  #dropdownMenu2 {
+    color: #555;
+  }
+
+  .dropdown-item {
+    text-align: center;
+    align-content: flex-center;
+  }
+
+  .navbar-nav {
+    margin-top: 1rem;
+    text-align: center;
+    align-content: flex-center;
+
+  }
+
+  .nav-link {
+    width: 100%;
+    color: #555 !important;
+  }
+
+  .navbar-toggler {
+    z-index: 1042;
+    position: relative;
+  }
+
+  .move-toggler {
+    right: 60%;
+    top: 0;
+  }
+
+  .sm-hr-home {
+    visibility: visible !important;
+    border-top: double teal;
+    width: 80%;
+  }
+
+  .sm-hr-rest {
+    visibility: visible !important;
+    border-top: 1px thin teal;
+    width: 60%;
+  }
 }
 
 #main-content {
@@ -32,7 +89,7 @@ body {
 }
 
 #image01 {
-  background-image: url('/img/carousel01.png');
+  background-image: url('https://images.unsplash.com/photo-1548678967-f1aec58f6fb2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1490&q=80');
   height: 100vh;
   width: auto;
   background-size: cover;
@@ -42,7 +99,17 @@ body {
 }
 
 #image02 {
-  background-image: url('/img/carousel02.png');
+  background-image: url('https://images.unsplash.com/photo-1530996340436-66c2f1209ab9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
+  height: 100vh;
+  width: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: brightness(60%);
+}
+
+#image03 {
+  background-image: url('https://images.unsplash.com/photo-1570015329194-675ae0cf2516?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
   height: 100vh;
   width: auto;
   background-size: cover;
@@ -52,7 +119,7 @@ body {
 }
 
 #imageCruises01 {
-  background-image: url('/img/carousel01.png');
+  background-image: url('https://images.unsplash.com/photo-1548161545-004d32bef83a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80');
   height: 50vh;
   width: auto;
   background-size: cover;
@@ -62,7 +129,7 @@ body {
 }
 
 #imageCruises02 {
-  background-image: url('/img/carousel02.png');
+  background-image: url('https://images.unsplash.com/photo-1510755637548-70ca4dd352fd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
   height: 50vh;
   width: auto;
   background-size: cover;
@@ -92,7 +159,7 @@ body {
   box-shadow: 0px 10px 29px -11px rgba(0, 0, 0, 0.75);
 }
 
-#cruises-preview{
+#cruises-preview {
   margin-top: 7rem;
   padding-top: 0;
 }
@@ -109,8 +176,7 @@ body {
   background-color: #f2f2f2;
 }
 
-#contact {
-}
+#contact {}
 
 a {
   color: #262626;
@@ -160,7 +226,7 @@ small,
   font-size: 0.8em;
 }
 
-.josefin{
+.josefin {
   font-family: 'Josefin Sans';
 }
 
@@ -170,6 +236,7 @@ small,
 
 .navbar .nav-link {
   color: #fff;
+  font-family: 'Josefin Sans';
 }
 
 .navbar .nav-link:hover,
@@ -232,6 +299,30 @@ small,
   transition: transform 2s ease, opacity .7s ease-out;
 }
 
+.scroll-to-top {
+  font-size: 2rem;
+  z-index: 1042;
+  right: 1rem;
+  bottom: 1rem;
+  display: none;
+  color: #03dac6 !important;
+}
+
+.scroll-to-top a {
+  width: 3.5rem;
+  height: 3.5rem;
+  line-height: 3.1rem;
+  color: #03dac6 !important;
+}
+
+.scroll-to-top:hover {
+  color: #00a896 !important;
+}
+
+.scroll-to-top a :hover {
+  color: #00a896 !important;
+}
+
 .centered {
   display: flex;
   justify-content: center;
@@ -264,6 +355,61 @@ small,
   border: none;
 }
 
+.cruises-images {
+  width: 100%;
+}
+
+.sm-hr-home {
+  visibility: hidden;
+}
+
+.sm-hr-rest {
+  visibility: hidden;
+}
+
+.text-ns {
+  font-size: 1.2rem;
+}
+
+.pzoom {
+  overflow: hidden;
+  position: relative;
+  float: left;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.czoom {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.pzoom:hover .czoom,
+.pzoom:focus .czoom {
+  -ms-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+  filter: brightness(0.8);
+}
+
+.pzoom:hover .czoom:before,
+.pzoom:focus .czoom:before {
+  display: block;
+}
+
+.pzoom:hover a,
+.pzoom:focus a {
+  display: block;
+}
+
 .tripadvisor {
   color: #34e0a1;
 }
@@ -278,6 +424,10 @@ small,
   background-color: #9e47ff;
 }
 
-.teal{
+.teal {
   color: #03dac6;
+}
+
+.accent:hover {
+  background-color: #03dac6;
 }

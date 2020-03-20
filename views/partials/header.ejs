@@ -12,7 +12,8 @@
 
 
 
-    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:200,400|Josefin+Sans&display=swap&subset=cyrillic,greek" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Fira+Sans:200,400|Josefin+Sans&display=swap&subset=cyrillic,greek"
+    rel="stylesheet">
 
 
 <!-- Font Awesome CDN -->
@@ -21,54 +22,64 @@
 
 <link rel="stylesheet" href="/css/main.css">
 
-<body>
+<body id="page-top">
+    <div class="d-flex justify-content-end">
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container pb-0">
+                <div>
+                    <a class="navbar-brand" id="logo" href="/index">LOGO</a>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target=" #navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation" id="navToggler">
+                    <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+                </button>
 
-    <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="/index">LOGO</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"><i class="fas fa-chevron-circle-down"></i></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active px-2">
-                        <a class="nav-link" href="/index"> <%= t('home') %>
-                            <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item px-2">
-                        <a class="nav-link" href="/cruises"><%= t('cruises') %></a>
-                    </li>
-                    <li class="nav-item px-2">
-                        <a class="nav-link" href="/photos"><%= t('photos') %></a>
-                    </li>
-                    <li class="nav-item px-2">
-                        <a class="nav-link" href="/index/#contact"><%= t('contact') %></a>
-                    </li>
-                    <li class="nav-item px-2 dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="bookingDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <%= t('booking') %>
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="bookingDropdown">
-                            <a class="dropdown-item" href="/booking/#bcaves"><%= t('bcaves') %></a>
-                            <a class="dropdown-item" href="/booking/#shipwreck"><%= t('shipwreck') %></a>
-                        </div>
-                    </li>
-                    <li class="nav-item px-2 dropdown">
-                        <button class="btn dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">
-                            <i class="fas fa-globe-europe"></i>
-                        </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                            <a class="dropdown-item" href="?lng=en">EN</a>
-                            <a class="dropdown-item" href="?lng=el">EL</a>
-                            <a class="dropdown-item" href="?lng=ru">RU</a>
-                            <a class="dropdown-item" href="?lng=ja">JA</a>
-                        </div>
-                    </li>
-                </ul>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active px-2">
+                            <a class="nav-link" href="/index">
+                                <%= t('home') %>
+                                <span class="sr-only">(current)</span></a>
+                        </li>
+                        <hr class="sm-hr-home">
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="/cruises"><%= t('cruises') %></a>
+                        </li>
+                        <hr class="sm-hr-rest">
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="/photos"><%= t('photos') %></a>
+                        </li>
+                        <hr class="sm-hr-rest">
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="/index/#contact"><%= t('contact') %></a>
+                        </li>
+                        <hr class="sm-hr-rest">
+                        <li class="nav-item px-2 dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="bookingDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <%= t('booking') %>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="bookingDropdown">
+                                <a class="dropdown-item accent" href="/booking/#bcaves"><%= t('bcaves') %></a>
+                                <a class="dropdown-item accent" href="/booking/#shipwreck"><%= t('shipwreck') %></a>
+                            </div>
+                        </li>
+                        <hr class="sm-hr-rest">
+                        <li class="nav-item px-2 dropdown">
+                            <button class="btn dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-globe-europe"></i>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                <a class="dropdown-item accent" href="?lng=en">EN</a>
+                                <a class="dropdown-item accent" href="?lng=el">EL</a>
+                                <a class="dropdown-item accent" href="?lng=ru">RU</a>
+                                <a class="dropdown-item accent" href="?lng=ja">JA</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </div>
