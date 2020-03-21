@@ -96,6 +96,7 @@ $('.carousel').carousel({
 $("#navToggler").click(function () {
             $("#navbarSupportedContent").animate({width:'toggle'},350);
             $(this).toggleClass("move-toggler", 300);
+            $("#changeIcon").toggleClass("changeIcon", 300);
             $("#logo").toggle( "drop", 500 );
         }
 );

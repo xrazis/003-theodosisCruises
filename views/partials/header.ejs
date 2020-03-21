@@ -7,58 +7,71 @@
     <title>Theodosis Cruises</title>
 </head>
 
+<!--    Bootstrap   -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-
-
+<!--    Google Font -->
 <link href="https://fonts.googleapis.com/css?family=Fira+Sans:200,400|Josefin+Sans&display=swap&subset=cyrillic,greek"
     rel="stylesheet">
 
-
-<!-- Font Awesome CDN -->
+<!-- Font Awesome and Google Material Icons CDN -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
     integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
+<!--    CSS -->
 <link rel="stylesheet" href="/css/main.css">
 
 <body id="page-top">
     <div class="d-flex justify-content-end">
         <nav class="navbar navbar-expand-lg fixed-top">
-            <div class="container pb-0">
+            <div class="container d-flex pb-0">
                 <div>
                     <a class="navbar-brand" id="logo" href="/index">LOGO</a>
                 </div>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target=" #navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation" id="navToggler">
-                    <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+                    <span class="navbar-toggler-icon"><span class="material-icons" id="changeIcon">list</span>
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active px-2">
                             <a class="nav-link" href="/index">
-                                <%= t('home') %>
+                                <span class="material-icons md-18 align-middle mr-1">home</span>
+                                <span class="align-middle pt-1"><%= t('home') %></span>
                                 <span class="sr-only">(current)</span></a>
                         </li>
                         <hr class="sm-hr-home">
                         <li class="nav-item px-2">
-                            <a class="nav-link" href="/cruises"><%= t('cruises') %></a>
+                            <a class="nav-link" href="/cruises">
+                                <span class="material-icons md-18 align-middle mr-1">waves</span>
+                                <span class="align-middle pt-1"><%= t('cruises') %></span>
+                            </a>
                         </li>
                         <hr class="sm-hr-rest">
                         <li class="nav-item px-2">
-                            <a class="nav-link" href="/photos"><%= t('photos') %></a>
+                            <a class="nav-link" href="/photos">
+                                <span class="material-icons md-18 align-middle mr-1">camera_alt</span>
+                                <span class="align-middle pt-1 mr-1"><%= t('photos') %></span>
+                            </a>
                         </li>
                         <hr class="sm-hr-rest">
                         <li class="nav-item px-2">
-                            <a class="nav-link" href="/index/#contact"><%= t('contact') %></a>
+                            <a class="nav-link" href="/index/#contact">
+                                <span class="material-icons md-18 align-middle mr-1">contact_mail</span>
+                                <span class="align-middle pt-1 mr-1"><%= t('contact') %></span>
+                            </a>
                         </li>
                         <hr class="sm-hr-rest">
                         <li class="nav-item px-2 dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="bookingDropdown" role="button"
+                            <a class="nav-link" href="#" id="bookingDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <%= t('booking') %>
+                                <span class="material-icons md-18 align-middle mr-1">style</span>
+                                <span class="align-middle pt-1 mr-1"><%= t('booking') %></span>
+                                <span class="material-icons md-18 align-middle mr-1">keyboard_arrow_down</span>
                             </a>
                             <div class="dropdown-menu" aria-labelledby="bookingDropdown">
                                 <a class="dropdown-item accent" href="/booking/#bcaves"><%= t('bcaves') %></a>
@@ -66,10 +79,10 @@
                             </div>
                         </li>
                         <hr class="sm-hr-rest">
-                        <li class="nav-item px-2 dropdown">
-                            <button class="btn dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
+                        <li class="nav-item px-2 dropdown center-globe">
+                            <button class="btn globe p-0" type="button" id="dropdownMenu2" data-toggle="dropdown"
                                 aria-haspopup="true" aria-expanded="false">
-                                <i class="fas fa-globe-europe"></i>
+                                <span class="material-icons md-18 align-middle">language</span>
                             </button>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
                                 <a class="dropdown-item accent" href="?lng=en">EN</a>
