@@ -1,70 +1,173 @@
 <%- include("partials/header.ejs") %>
 
 <div id="cruises-carousel" class="carousel slide carousel-fade" data-ride="carousel">
-    <div class="carousel-inner">
-        <div class="carousel-item w-100 active" id="imageCruises01">
-        </div>
-        <div class="carousel-item w-100" id="imageCruises02"></div>
+  <div class="carousel-inner">
+    <div class="carousel-item w-100 active" id="imageCruises01">
     </div>
+    <div class="carousel-item w-100" id="imageCruises02"></div>
+  </div>
 </div>
 
 <div class="rounded bg-light" id="overlap-container">
 
-    <div class="container mb-4" id="main">
-        <div class="row">
-            <h3 class="ml-4 col-sm-12 col-md-12 mb-5">Theodosis Cruises</h3>
-            <p class="ml-5 col-8">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima praesentium accusamus beatae officiis voluptatum.
-          </p>
-        </div>
-      </div>
-    
-      <div class="container-fluid centered row">
-        <div class="col-12 col-md-3 p-0 mx-1 mb-4 pzoom">
-          <div class="czoom centered">
-            <img data-src="https://images.unsplash.com/photo-1457195740896-7f345efef228?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="" class="img-thumbnail photo_gallery no_click p-0 centered"
-              style="max-height:500px" />
-          </div>
-        </div>
-        <div class="col-12 col-md-3 p-0 mx-1 mb-4 pzoom">
-            <div class="czoom centered">
-              <img data-src="https://images.unsplash.com/photo-1457195740896-7f345efef228?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="" class="img-thumbnail photo_gallery no_click p-0 centered"
-                style="max-height:500px" />
-            </div>
-          </div>
-          <div class="col-12 col-md-3 p-0 mx-1 mb-4 pzoom">
-            <div class="czoom centered">
-              <img data-src="https://images.unsplash.com/photo-1457195740896-7f345efef228?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="" class="img-thumbnail photo_gallery no_click p-0 centered"
-                style="max-height:500px" />
-            </div>
-          </div>
-          <div class="col-12 col-md-3 p-0 mx-1 mb-4 pzoom">
-            <div class="czoom centered">
-              <img data-src="https://images.unsplash.com/photo-1457195740896-7f345efef228?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="" class="img-thumbnail photo_gallery no_click p-0 centered"
-                style="max-height:500px" />
-            </div>
-          </div>
-          <div class="col-12 col-md-3 p-0 mx-1 mb-4 pzoom">
-            <div class="czoom centered">
-              <img data-src="https://images.unsplash.com/photo-1457195740896-7f345efef228?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="" class="img-thumbnail photo_gallery no_click p-0 centered"
-                style="max-height:500px" />
-            </div>
-          </div>
-          <div class="col-12 col-md-3 p-0 mx-1 mb-4 pzoom">
-            <div class="czoom centered">
-              <img data-src="https://images.unsplash.com/photo-1457195740896-7f345efef228?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="" class="img-thumbnail photo_gallery no_click p-0 centered"
-                style="max-height:500px" />
-            </div>
-          </div>
-          <div class="col-12 col-md-3 p-0 mx-1 mb-4 pzoom">
-            <div class="czoom centered">
-              <img data-src="https://images.unsplash.com/photo-1457195740896-7f345efef228?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="" class="img-thumbnail photo_gallery no_click p-0 centered"
-                style="max-height:500px" />
-            </div>
-          </div>
-      </div>
-      
+  <div class="container mb-4" id="main">
+    <div class="row">
+      <h3 class="ml-4 col-sm-12 col-md-12 mb-5">Theodosis Cruises</h3>
+      <p class="ml-5 col-8">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima praesentium accusamus beatae officiis
+        voluptatum.
+      </p>
+    </div>
+  </div>
 
+  <div class="container centered pt-4">
+    <div class="card-columns">
+      <div class="card mt-4 shadow">
+        <img
+          src="https://images.unsplash.com/photo-1583992054247-f7e5267d4429?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
+          class="card-img-top card-floating-image" alt="...">
+        <div class="card-body pt-0 row">
+          <span class="material-icons pb-2 mr-2 teal">my_location</span>
+          <h6 class="card-title teal-darker">Location</h6>
+          <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+      </div>
+      <div class="card p-3 shadow text-white purple-bg">
+        <blockquote class="blockquote mb-0 card-body">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+          <footer class="blockquote-footer text-white">
+            <small>
+              Someone famous in <cite title="Source Title">Source Title</cite>
+            </small>
+          </footer>
+        </blockquote>
+      </div>
+      <div class="card mt-4 shadow">
+        <img
+          src="https://images.unsplash.com/photo-1508488422239-4769875d6128?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+          class="card-img-top card-floating-image" alt="...">
+        <div class="card-body pt-0 row">
+          <span class="material-icons pb-2 mr-2 teal">my_location</span>
+          <h6 class="card-title teal-darker">Location</h6>
+          <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+      </div>
+      <div class="card text-white text-center p-3 teal-darker-bg shadow">
+        <blockquote class="blockquote mb-0">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
+          <footer class="blockquote-footer text-white">
+            <small>
+              Someone famous in <cite title="Source Title">Source Title</cite>
+            </small>
+          </footer>
+        </blockquote>
+      </div>
+      <div class="card text-center shadow">
+        <div class="card-body row">
+          <span class="material-icons pb-2 mr-2 teal">my_location</span>
+          <h6 class="card-title teal-darker">Location</h6>
+          <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+      </div>
+      <div class="card shadow">
+        <img
+          src="https://images.unsplash.com/photo-1511458206431-afcf3cebe562?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
+          class="card-img-top rounded-lg" alt="...">
+      </div>
+      <div class="card p-3 text-right shadow purple-bg">
+        <blockquote class="blockquote text-white mb-0">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+          <footer class="blockquote-footer text-white">
+            <small>
+              Someone famous in <cite title="Source Title">Source Title</cite>
+            </small>
+          </footer>
+        </blockquote>
+      </div>
+      <div class="card mt-4 shadow">
+        <img
+          src="https://images.unsplash.com/photo-1577564973135-e6d701878763?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
+          class="card-img-top  card-floating-image"" alt="...">
+        <div class="card-body pt-0 row">
+          <span class="material-icons pb-2 mr-2 teal">my_location</span>
+          <h6 class="card-title teal-darker">Location</h6>
+          <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+      </div>
+      <div class="card mt-4 shadow">
+        <img
+          src="https://images.unsplash.com/photo-1583992054247-f7e5267d4429?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
+          class="card-img-top  card-floating-image"" alt="...">
+        <div class="card-body pt-0 row">
+          <span class="material-icons pb-2 mr-2 teal">my_location</span>
+          <h6 class="card-title teal-darker">Location</h6>
+          <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+      </div>
+      <div class="card p-3 shadow text-white purple-bg">
+        <blockquote class="blockquote mb-0 card-body">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+          <footer class="blockquote-footer text-white">
+            <small>
+              Someone famous in <cite title="Source Title">Source Title</cite>
+            </small>
+          </footer>
+        </blockquote>
+      </div>
+      <div class="card mt-4 shadow">
+        <img
+          src="https://images.unsplash.com/photo-1508488422239-4769875d6128?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+          class="card-img-top card-floating-image" alt="...">
+        <div class="card-body pt-0 row">
+          <span class="material-icons pb-2 mr-2 teal">my_location</span>
+          <h6 class="card-title teal-darker">Location</h6>
+          <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+      </div>
+      <div class="card text-white text-center p-3 teal-darker-bg shadow">
+        <blockquote class="blockquote mb-0">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
+          <footer class="blockquote-footer text-white">
+            <small>
+              Someone famous in <cite title="Source Title">Source Title</cite>
+            </small>
+          </footer>
+        </blockquote>
+      </div>
+      <div class="card text-center shadow">
+        <div class="card-body row">
+          <span class="material-icons pb-2 mr-2 teal">my_location</span>
+          <h6 class="card-title teal-darker">Location</h6>
+          <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+      </div>
+      <div class="card shadow">
+        <img
+          src="https://images.unsplash.com/photo-1506296933720-1a0ce9bed41d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
+          class="card-img-top rounded-lg" alt="...">
+      </div>
+      <div class="card p-3 text-right shadow purple-bg">
+        <blockquote class="blockquote text-white mb-0">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+          <footer class="blockquote-footer text-white">
+            <small>
+              Someone famous in <cite title="Source Title">Source Title</cite>
+            </small>
+          </footer>
+        </blockquote>
+      </div>
+      <div class="card shadow mt-4">
+        <img
+          src="https://images.unsplash.com/photo-1509116875099-53bc7c34543e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
+          class="card-img-top card-floating-image" alt="...">
+        <div class="card-body pt-0 row">
+          <span class="material-icons pb-2 mr-2 teal">my_location</span>
+          <h6 class="card-title teal-darker">Location</h6>
+          <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
 <%- include("partials/footer.ejs") %>

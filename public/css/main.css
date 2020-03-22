@@ -70,10 +70,11 @@ body {
     right: 60%;
   }
 
-  .changeIcon{
+  .changeIcon {
     visibility: hidden;
   }
-  .changeIcon:after{
+
+  .changeIcon:after {
     transition: all 0.3s;
     visibility: visible;
     content: 'clear';
@@ -109,6 +110,11 @@ body {
   width: 100%;
   z-index: 1;
   position: relative;
+}
+
+#contact-carousel {
+  max-height: 50vh;
+  filter: brightness(60%);
 }
 
 #image01 {
@@ -414,6 +420,11 @@ small,
   visibility: hidden;
 }
 
+.normal-hr {
+  border-top: 2px thin teal;
+  width: 80%;
+}
+
 .text-ns {
   font-size: 1.2rem;
 }
@@ -457,6 +468,33 @@ small,
   display: block;
 }
 
+.cruises-card {
+  max-height: auto;
+  max-width: auto;
+  border: hidden;
+  background-color: none;
+  background-color: #f8f9fa;
+}
+
+.cruises-image {
+  max-height: 40vh;
+  max-width: auto;
+  background-size: cover;
+  background-color: #f8f9fa;
+  margin: 0;
+}
+
+.card-floating-image {
+  position: relative;
+  border-radius: 5%;
+  top: -2.5vh;
+  left: 2.5%;
+  width: 95%;
+  -webkit-box-shadow: 0px 10px 29px -11px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 10px 29px -11px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 10px 29px -11px rgba(0, 0, 0, 0.75);
+}
+
 .btn-purple {
   color: #fff;
   background-color: #6200ee;
@@ -467,8 +505,25 @@ small,
   background-color: #9e47ff;
 }
 
+.a.nav-link .active .btn-purple {
+  color: #fff;
+  background-color: #9e47ff;
+}
+
 .teal {
   color: #03dac6;
+}
+
+.teal-darker {
+  color: #00a896;
+}
+
+.teal-darker-bg {
+  background-color: #00a896;
+}
+
+.purple-bg {
+  background-color: #6200ee;
 }
 
 .accent:hover {
