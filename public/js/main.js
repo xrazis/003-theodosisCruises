@@ -64,7 +64,7 @@ if ($(window).scrollTop() > 50) {
     $(".navbar").addClass("active");
 };
 
-if ($(window).scrollTop() > 100) {
+if ($(window).scrollTop() > 60) {
     $("#overlap-container").addClass("moveup");
 };
 
@@ -79,7 +79,7 @@ $(window).scroll(function () {
 
 //  Container movement
 $(window).scroll(function () {
-    if ($(window).scrollTop() > 100) {
+    if ($(window).scrollTop() > 60) {
         $("#overlap-container").addClass("moveup");
     } else {
         $("#overlap-container").removeClass("moveup");

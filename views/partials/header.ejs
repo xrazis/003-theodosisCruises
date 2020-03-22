@@ -59,13 +59,6 @@
                             </a>
                         </li>
                         <hr class="sm-hr-rest">
-                        <li class="nav-item px-2">
-                            <a class="nav-link" href="/index/#contact">
-                                <span class="material-icons md-18 align-middle mr-1">contact_mail</span>
-                                <span class="align-middle pt-1 mr-1"><%= t('contact') %></span>
-                            </a>
-                        </li>
-                        <hr class="sm-hr-rest">
                         <li class="nav-item px-2 dropdown">
                             <a class="nav-link" href="#" id="bookingDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -74,9 +67,16 @@
                                 <span class="material-icons md-18 align-middle mr-1">keyboard_arrow_down</span>
                             </a>
                             <div class="dropdown-menu" aria-labelledby="bookingDropdown">
-                                <a class="dropdown-item accent" href="/booking/#bcaves"><%= t('bcaves') %></a>
-                                <a class="dropdown-item accent" href="/booking/#shipwreck"><%= t('shipwreck') %></a>
+                                <a class="dropdown-item accent" href="/bcaves"><%= t('bcaves') %></a>
+                                <a class="dropdown-item accent" href="/shipwreck"><%= t('shipwreck') %></a>
                             </div>
+                        </li>
+                        <hr class="sm-hr-rest">
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="/contact">
+                                <span class="material-icons md-18 align-middle mr-1">map</span>
+                                <span class="align-middle pt-1 mr-1"><%= t('contact') %></span>
+                            </a>
                         </li>
                         <hr class="sm-hr-rest">
                         <li class="nav-item px-2 dropdown center-globe">

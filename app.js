@@ -11,7 +11,7 @@ var enTranslations = require("./locales/en.json");
 var elTranslations = require("./locales/el.json");
 var ruTranslations = require("./locales/ru.json");
 var jaTranslations = require("./locales/ja.json");
-
+  
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
 app.use(
@@ -22,24 +22,24 @@ app.use(
 app.use(expressSanitizer());
 
 i18next
-    .use(i18nextMiddleware.LanguageDetector)
-    .use(FilesystemBackend)
-    .init({
-      detection: {
-        order: ['querystring', 'cookie'],
-        caches: ['cookie']
-      },
-        preload: ["en", "el", "ru", "ja"],
-        fallbackLng: "en",
-        debug: false,
-        resources: {
-            en: enTranslations,
-            el: elTranslations,
-            ru: ruTranslations,
-            ja: jaTranslations
-        },
-        saveMissing: true
-    });
+  .use(i18nextMiddleware.LanguageDetector)
+  .use(FilesystemBackend)
+  .init({
+    detection: {
+      order: ['querystring', 'cookie'],
+      caches: ['cookie']
+    },
+    preload: ["en", "el", "ru", "ja"],
+    fallbackLng: "en",
+    debug: false,
+    resources: {
+      en: enTranslations,
+      el: elTranslations,
+      ru: ruTranslations,
+      ja: jaTranslations
+    },
+    saveMissing: true
+  });
 
 app.use(i18nextMiddleware.handle(i18next));
 app.use("/", indexRoute);
