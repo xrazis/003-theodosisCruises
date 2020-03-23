@@ -13,7 +13,7 @@
     <div class="container" id="contact">
         <h2 class="centered col-12 mb-5">Contact</h2>
         <div class="centered col-12 mb-4">
-            <form action="mailto:info@theodosiscruises.com" method="post" enctype="text/plain">
+            <form action="/contact" method="POST">
                 <div class="form-row">
                     <div class="col">
                         <input type="email" name="email" class="form-control" placeholder="Your Email" required>
@@ -21,7 +21,7 @@
                     <div class="col">
                         <input type="text" name="name" class="form-control" placeholder="Your Name" required>
                     </div>
-                    <textarea class="form-control mt-3" id="validationTextarea" placeholder="Message">
+                    <textarea class="form-control mt-3" name="message" id="validationTextarea" placeholder="Message">
                         </textarea>
                 </div>
                 <div class="container centered">
