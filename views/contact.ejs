@@ -1,76 +1,109 @@
 <%- include("partials/header.ejs") %>
 
-<div id="contact-carousel" class="carousel slide carousel-fade" data-ride="carousel">
-    <div class="carousel-inner">
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12592.21466294518!2d20.7060836!3d37.9058083!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf70ea5e38d240842!2sTheodosis%20Cruises!5e0!3m2!1sen!2sgr!4v1584904141142!5m2!1sen!2sgr"
-            width="1920" height="540" frameborder="0" style="border:0;" allowfullscreen="no" aria-hidden="false"
-            tabindex="0"></iframe>
-    </div>
+<div
+  id="contact-carousel"
+  class="carousel slide carousel-fade"
+  data-ride="carousel"
+>
+  <div class="carousel-inner">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12592.21466294518!2d20.7060836!3d37.9058083!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf70ea5e38d240842!2sTheodosis%20Cruises!5e0!3m2!1sen!2sgr!4v1584904141142!5m2!1sen!2sgr"
+      width="1920"
+      height="540"
+      frameborder="0"
+      style="border:0;"
+      allowfullscreen="no"
+      aria-hidden="false"
+      tabindex="0"
+    ></iframe>
+  </div>
 </div>
 
 <div class="rounded bg-light" id="overlap-container">
-    <div class="container" id="contact">
-        <h2 class="centered col-12 mb-5">Contact</h2>
-        <div class="centered col-12 mb-4">
-            <form action="/contact" method="POST">
-                <div class="form-row">
-                    <div class="col">
-                        <input type="email" name="email" class="form-control" placeholder="Your Email" required>
-                    </div>
-                    <div class="col">
-                        <input type="text" name="name" class="form-control" placeholder="Your Name" required>
-                    </div>
-                    <textarea class="form-control mt-3" name="message" id="validationTextarea" placeholder="Message">
-                        </textarea>
-                </div>
-                <div class="container centered">
-                    <button type="submit" class="btn btn-lg btn-purple rounded-pill mt-4">Send!</button>
-                </div>
-            </form>
+  <div class="container" id="contact">
+    <h2 class="centered col-12 mb-5">Contact</h2>
+    <div class="centered col-12 mb-4">
+      <form action="/contact" method="POST">
+        <div class="form-row">
+          <div class="col">
+            <input
+              type="email"
+              name="email"
+              class="form-control"
+              placeholder="Your Email"
+              required
+            />
+          </div>
+          <div class="col">
+            <input
+              type="text"
+              name="name"
+              class="form-control"
+              placeholder="Your Name"
+              required
+            />
+          </div>
+          <textarea
+            class="form-control mt-3"
+            name="message"
+            id="validationTextarea"
+            placeholder="Message"
+          >
+          </textarea>
         </div>
-        <div class="col-12 centered mt-5">
-            <div class="row d-flex align-items-start">
-                <div class="container centered col-12 col-md-4 mb-3 mt-5">
-                    <div class="row col centered d-flex align-items-start">
-                        <div class="col centered">
-                            <span class="material-icons md-24 teal">
-                                location_on
-                            </span>
-                            <h5 class="text-center ml-3 mt-3">Located</h5>
-                        </div>
-                        <small class="text-center text-muted ml-sm-3 mt-3">St. Nicholas - Volimes, Zakynthos,
-                            Greece</small>
-                    </div>
-                </div>
-                <div class="container centered col-12 col-md-4 mb-3 mt-5">
-                    <div class="row col centered d-flex align-items-start">
-                        <div class="col centered">
-                            <span class="material-icons md-24 teal">
-                                local_phone
-                            </span>
-                            <h5 class="text-center ml-3 mt-3">Phones</h5>
-                        </div>
-                        <small class="col-12 text-center text-muted ml-sm-3 mt-3">+30 6942473757 <br> +30
-                            6947329835</small>
-                    </div>
-                </div>
-                <div class="container centered col-12 col-md-4 mb-3 mt-5">
-                    <div class="row col centered d-flex align-items-start">
-                        <div class="col centered">
-                            <span class="material-icons md-24 teal">
-                                account_balance
-                            </span>
-                            <h5 class="text-center ml-3 mt-3">Bank</h5>
-                        </div>
-                        <small class="text-center text-muted ml-sm-3 mt-3">IBAN: GR6002606800000780200166454 <br>
-                            Beneficiary: THEODOSIS CRUISES Piraeus Bank</small>
-                    </div>
-                </div>
-            </div>
+        <div class="container centered">
+          <button type="submit" class="btn btn-lg btn-purple rounded-pill mt-4">
+            Send!
+          </button>
         </div>
-
+      </form>
     </div>
+    <div class="col-12 centered mt-5">
+      <div class="row d-flex align-items-start">
+        <div class="container centered col-12 col-md-4 mb-3 mt-5">
+          <div class="row col centered d-flex align-items-start">
+            <div class="col centered">
+              <span class="material-icons md-24 teal">
+                location_on
+              </span>
+              <h5 class="text-center ml-3 mt-3">Located</h5>
+            </div>
+            <small class="text-center text-muted ml-sm-3 mt-3"
+              >St. Nicholas - Volimes, Zakynthos, Greece</small
+            >
+          </div>
+        </div>
+        <div class="container centered col-12 col-md-4 mb-3 mt-5">
+          <div class="row col centered d-flex align-items-start">
+            <div class="col centered">
+              <span class="material-icons md-24 teal">
+                local_phone
+              </span>
+              <h5 class="text-center ml-3 mt-3">Phones</h5>
+            </div>
+            <small class="col-12 text-center text-muted ml-sm-3 mt-3"
+              >+30 6942473757 <br />
+              +30 6947329835</small
+            >
+          </div>
+        </div>
+        <div class="container centered col-12 col-md-4 mb-3 mt-5">
+          <div class="row col centered d-flex align-items-start">
+            <div class="col centered">
+              <span class="material-icons md-24 teal">
+                account_balance
+              </span>
+              <h5 class="text-center ml-3 mt-3">Bank</h5>
+            </div>
+            <small class="text-center text-muted ml-sm-3 mt-3"
+              >IBAN: GR6002606800000780200166454 <br />
+              Beneficiary: THEODOSIS CRUISES Piraeus Bank</small
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
 <%- include("partials/footer.ejs") %>

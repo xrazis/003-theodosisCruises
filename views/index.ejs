@@ -1,71 +1,95 @@
 <%- include("partials/header.ejs") %>
-<div id="main-carousel" class="carousel slide carousel-fade" data-ride="carousel">
-    <div class="carousel-inner">
-        <div class="carousel-item w-100 active" id="image01"></div>
-        <div class="carousel-item w-100" id="image02"></div>
-        <div class="carousel-item w-100" id="image03"></div>
-    </div>
+<div
+  id="main-carousel"
+  class="carousel slide carousel-fade"
+  data-ride="carousel"
+>
+  <div class="carousel-inner">
+    <div class="carousel-item w-100 active" id="image01"></div>
+    <div class="carousel-item w-100" id="image02"></div>
+    <div class="carousel-item w-100" id="image03"></div>
+  </div>
 </div>
 
 <div class="text-white" id="landing-text">
-    <h1 class="text-white">Your Journey starts here</h1>
-    <p>Explore the beauties of Zakynthos island while enjoying your private cruise.</p>
-    <a href="/cruises"><button class="btn btn-lg btn-purple my-2 my-sm-0 rounded-pill">Book Now!</button></a>
+  <h1 class="text-white">Your Journey starts here</h1>
+  <p>
+    <%= t('journey-subheader') %>
+  </p>
+  <a href="/cruises"
+    ><button class="btn btn-lg btn-purple my-2 my-sm-0 rounded-pill">
+      Book Now!
+    </button></a
+  >
 </div>
 
 <div class="rounded bg-light" id="overlap-container">
-    <div class="container pt-5 mt-4">
-        <h2 class="centered col-sm-12 col-md-12 mb-5">Who are we</h2>
-        <p class="container centered text-center col-10 text-ns"><%= t('whoarewe') %></p>
-    </div>
+  <div class="container pt-5 mt-4">
+    <h2 class="centered col-sm-12 col-md-12 mb-5">Who are we</h2>
+    <p class="container centered text-center col-10 text-ns">
+      <%= t('whoarewe') %>
+    </p>
+  </div>
 
-    <div class="container bmargin" id="tour-icons">
-        <div class="row centered d-flex align-items-start" id="cruises-preview">
-            <!-- <h3 class="centered col-sm-12 col-md-12 mb-5">Group Cruises</h3> -->
-            <div class="centered row col-sm-12 col-md-4 mb-5">
-                <img src="/img/icons/icons8-cave-96.png" alt="">
-                <h5 class="centered col-sm-12 mt-4 josefin"><%= t('bcaves') %></h5>
-                <p class="text-center col-sm-8"><%= t('bcaves-subheader') %></p>
-            </div>
-            <div class="centered row col-sm-12 col-md-4 mb-5">
-                <img src="/img/icons/icons8-cargo-ship-96.png" alt="">
-                <h5 class="centered col-sm-12 mt-4 josefin"><%= t('shipwreck') %></h5>
-                <p class="text-center col-sm-8"><%= t('shipwreck-subheader') %></p>
-            </div>
-            <div class="centered row col-sm-12 col-md-4 mb-5">
-                <img src="/img/icons/icons8-swimming-96.png" alt="">
-                <h5 class="centered col-sm-12 mt-4 josefin"><%= t('shipwreck-bcaves') %></h5>
-                <p class="text-center col-sm-8"><%= t('shipwreck-bcaves-subheader') %></p>
-            </div>
+  <div class="container bmargin" id="tour-icons">
+    <div class="row centered d-flex align-items-start" id="cruises-preview">
+      <!-- <h3 class="centered col-sm-12 col-md-12 mb-5">Group Cruises</h3> -->
+      <div class="centered row col-sm-12 col-md-4 mb-5">
+        <img src="/img/icons/icons8-cave-96.png" alt="" />
+        <h5 class="centered col-sm-12 mt-4 josefin"><%= t('bcaves') %></h5>
+        <p class="text-center col-sm-8"><%= t('bcaves-subheader') %></p>
+      </div>
+      <div class="centered row col-sm-12 col-md-4 mb-5">
+        <img src="/img/icons/icons8-cargo-ship-96.png" alt="" />
+        <h5 class="centered col-sm-12 mt-4 josefin"><%= t('shipwreck') %></h5>
+        <p class="text-center col-sm-8"><%= t('shipwreck-subheader') %></p>
+      </div>
+      <div class="centered row col-sm-12 col-md-4 mb-5">
+        <img src="/img/icons/icons8-swimming-96.png" alt="" />
+        <h5 class="centered col-sm-12 mt-4 josefin">
+          <%= t('shipwreck-bcaves') %>
+        </h5>
+        <p class="text-center col-sm-8">
+          <%= t('shipwreck-bcaves-subheader') %>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container pt-5">
+    <h2 class="centered text-center col-sm-12 col-md-12 mb-5">
+      What clients say
+    </h2>
+  </div>
+
+  <div class="container-fluid shadow" id="testimonials">
+    <div class="container centered d-flex align-items-center bmargin" id="">
+      <div class="row centered d-flex align-items-start" id="">
+        <div class="centered row col-sm-12 col-md-4 mb-5">
+          <h5 class="centered col-sm-12 mt-4 josefin testimonial-text"><%= t('kostakis') %></h5>
+          <p class="text-center blockquote col-sm-8">
+            <%= t('"Lorem ipsum dolor sit amet consectetur adipisicing elit."') %>
+          </p>
         </div>
-    </div>
-
-    <div class="container pt-5">
-        <h2 class="centered text-center col-sm-12 col-md-12 mb-5">What clients say</h2>
-    </div>
-
-    <div class="container bmargin" id="">
-        <div class="row centered d-flex align-items-start" id="">
-            <!-- <h3 class="centered col-sm-12 col-md-12 mb-5">Group Cruises</h3> -->
-            <div class="centered row col-sm-12 col-md-4 mb-5">
-                <h5 class="centered col-sm-12 mt-4 josefin"><%= t('kostakis') %></h5>
-                <p class="text-center blockquote col-sm-8">
-                    <%= t('"Lorem ipsum dolor sit amet consectetur adipisicing elit."') %></p>
-            </div>
-            <div class="centered row col-sm-12 col-md-4 mb-5">
-                <h5 class="centered col-sm-12 mt-4 josefin"><%= t('lalakis') %></h5>
-                <p class="text-center blockquote col-sm-8">
-                    <%= t('Lorem ipsum dolor sit amet consectetur adipisicing elit.') %></p>
-            </div>
-            <div class="centered row col-sm-12 col-md-4 mb-5">
-                <h5 class="centered col-sm-12 mt-4 josefin"><%= t('maria') %></h5>
-                <p class="text-center blockquote col-sm-8">
-                    <%= t('Lorem ipsum dolor sit amet consectetur adipisicing elit.') %></p>
-            </div>
+        <div class="centered row col-sm-12 col-md-4 mb-5">
+          <h5 class="centered col-sm-12 mt-4 josefin"><%= t('lalakis') %></h5>
+          <p class="text-center blockquote col-sm-8">
+            <%= t('"Lorem ipsum dolor sit amet consectetur adipisicing elit."') %>
+          </p>
         </div>
+        <div class="centered row col-sm-12 col-md-4 mb-5">
+          <h5 class="centered col-sm-12 mt-4 josefin"><%= t('maria') %></h5>
+          <p class="text-center blockquote col-sm-8">
+            <%= t('"Lorem ipsum dolor sit amet consectetur adipisicing elit."') %>
+          </p>
+        </div>
+      </div>
     </div>
+  </div>
 
+  <div>
+    <h1>CONTACT</h1>
+  </div>
 </div>
-
 
 <%- include("partials/footer.ejs") %>

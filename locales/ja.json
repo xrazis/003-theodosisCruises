@@ -1,11 +1,31 @@
 {
-	"translation": {
-		"home": "ホーム",
-		"cruises": "弊社のツアー",
-		"photos": "写真",
-		"contact": "お問い合わせ",
-		"booking": "Booking",
-		"bcaves": "Blue Caves",
-		"shipwreck": "Blue Caves - Shipwreck"
-	}
+  "translation": {
+    "home": "ホーム",
+    "cruises": "弊社のツアー",
+    "photos": "写真",
+    "contact": "お問い合わせ",
+    "booking": "Booking",
+    "journey-subheader": "あなたのプライベートクルーズを楽しみながら、ザキントス島の美しさを探検！",
+    "whoarewe": "セオドシス・クルーズ は、ザキントスのヴォリメスにあるアギオス・ニコラオス の港を拠点とする家族経営の会社です。自社所有のクルーズ船を使った青の洞窟やナヴァイオビーチへのツアーや、プライバシーを保ちながらこの島の美しさを堪能したい方のためのプライベート・ツアーを企画します。",
+    "bcaves": "青の洞窟",
+    "bcaves-subheader": "ザキントス島の魅力的な青の洞窟の内部を1時間ほどツアーして、泳ぐことができます！",
+    "bcaves-info": "青の洞窟は、非常に鮮やかで、洞窟の壁に反射する海水の色からそう名付けられました。ザキントス島で最も有名な自然の観光名所のひとつです。1897年に発見され、毎年、数千人もの観光客が訪れています。この島の最北端にあり、大きい洞窟（「メガリ・スピリア」）と小さい洞窟（「ミクリ・スピリア」）へとつながるいくつもの洞窟から構成されています。弊社のツアーでは、このユニークな、世界的に有名な自然現象を、洞窟の中に入る弊社のクルーズ船からご堪能いただけます！ 弊社は、ヴォリメスにあるアギオス・ニコラオスのガソリンスタンドにあります。そこでは、フォティニさんが皆さんをお出迎えし、青の洞窟のツアーや自然現象についてご説明します。その後で、ディミトリスさんとスピロスさんが皆さんをクルーズ船までご案内し、ツアーの開始です。",
+    "shipwreck": "難破船のあるナヴァイオビーチ",
+    "shipwreck-subheader": "世界的に有名なザキントス島の難破船のあるナヴァイオビーチを訪れて、1時間ほど海水浴をしてリラックスできます！",
+    "shipwreck-bcaves": "ナヴァイオビーチ・青の洞窟",
+    "shipwreck-bcaves-subheader": "ザキントス島の最高の観光名所である、世界的に有名なナヴァイオビーチと魅力的な青の洞窟への2時間のツアーをお楽しみください！",
+    "shipwreck-bcaves-info": "このツアーは、ヴォリメスにあるアギオス・ニコラオスの港から1時間ごとに出発し、ナヴァイオビーチを訪れて、そこで1時間ほど海水浴をしてリラックスできます。弊社のクルーズ船は海岸のすぐ近くまで行き、特別のはしごを使って簡単にビーチまで行くことができます。ビーチではリラックスして、難破船を眺め、海水浴をする時間が充分にあります。 その後、青の洞窟へ向かいます。行く途中で、北側の海岸の全体とスヒナリ岬を眺めることができます。 ザキントス島でのツアーの多くは、クルーズ船が大きいために洞窟の中に入りません。 弊社は、洞窟の内部までご案内する唯一の会社です。洞窟の中で泳いで、この素晴らしい自然の創作物をすぐ近くでご堪能いただけますので、忘れられない経験となります。",
+    "terms-header": "Terms regarding the participation in day cruises organized by the company “Joint Ship Ownership of Theodosis Dimitris and Spiridon",
+    "terms-content01": "The company makes every effort to perform the scheduled sea excursions punctually and diligently. The company’s vessels meet all safety standards prescribed by Law for these specific cruises. Passengers are covered by third party liability insurance. A sufficient number of life jackets for adults and infants, as well as a first aid kit are made available.",
+    "terms-content02": "The excursion, which includes visiting the Blue Caves and the Navagio Beach, where we stay some time to swim, lasts a total of 2 hours and 30 minutes.",
+    "terms-content03": "The excursion, which includes visiting only the Blue Caves, lasts a total of 1 hour.",
+    "terms-content04": "Passengers should be at the embarkation point at least half an hour prior to the scheduled departure time of the vessel.",
+    "terms-content05": "Underage passengers should be accompanied by at least one adult, who will be responsible for their safety and supervision.",
+    "terms-content06": "Pregnant women should inform the crew about their pregnancy, so as to enjoy relevant treatment.",
+    "terms-content07": "Passengers are responsible for keeping their personal belongings and money they may carry safe. The ship owner company bears no responsibility for the potential loss of property.",
+    "terms-content08": "Reservation terms: To confirm the reservation customers are required to pay the full ticket price through PayPal or by bank transfer to the below account details and then send the proof of deposit to the company by e-mail (theodosiscruises@hotmail.com). Bank account details",
+    "terms-content09": "IBAN: GR6002606800000780200166454 Beneficiary: THEODOSIS CRUISES Piraeus Bank",
+    "terms-content10": "Cancellation: In case of cancellation by the passenger the ticket fee is not refunded. Participation in the excursion on another date is made though possible, provided that there are available places and the company is notified at least two days earlier.",
+    "terms-content11": "In case the sea excursion is not performed due to reasons of force majeure or imponderable factors (ex. bad weather conditions), participation on another date is made possible by priority. If another date is not possible for the passenger due to other scheduled activities or departure from Zakynthos, the full price of the issued ticket will be refunded. "
+  }
 }

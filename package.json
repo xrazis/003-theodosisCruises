@@ -1,5 +1,5 @@
 {
-  "name": "003-theodosiscruises",
+  "name": "theodosiscruises",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/xrazis/003-theodosisCruises.git"
+    "url": "git+https://github.com/xrazis/theodosisCruises.git"
   },
   "author": "Haris Razis",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/xrazis/003-theodosisCruises/issues"
+    "url": "https://github.com/xrazis/theodosisCruises"
   },
-  "homepage": "https://github.com/xrazis/003-theodosisCruises#readme",
+  "homepage": "https://github.com/xrazis/theodosisCruises#readme",
   "dependencies": {
     "body-parser": "^1.19.0",
     "ejs": "^3.0.1",
