@@ -30,7 +30,7 @@
 <div class="rounded bg-light" id="overlap-container">
   <!-- Who are we text-->
   <div class="container pt-5 mt-4">
-    <h2 class="centered col-sm-12 col-md-12 mb-5">Who are we</h2>
+    <h2 class="centered col-sm-12 col-md-12 mb-5 josefin">Who are we</h2>
     <p class="container centered text-center col-10 text-ns">
       <%= t('whoarewe') %>
     </p>
@@ -62,45 +62,33 @@
   </div>
 
   <!-- Client testimonial section-->
-  <div class="container pt-5">
-    <h2 class="centered text-center col-sm-12 col-md-12 mb-5">
-      What clients say
-    </h2>
-  </div>
-
-  <div class="container-fluid shadow" id="testimonials">
-    <div class="container centered d-flex align-items-center bmargin" id="">
-      <div class="row centered d-flex align-items-start" id="">
+  <div class="container-fluid testimonials">
+    <div class="container bmargin  testimonial-text">
+      <div class="row centered">
         <div class="centered row col-sm-12 col-md-4 mb-5">
-          <h5 class="centered col-sm-12 mt-4 josefin testimonial-text">
-            <%= t('kostakis') %>
+          <h5 class="centered col-sm-12 mt-4 josefin text-white">
+            Richard
           </h5>
           <p class="text-center blockquote col-sm-8">
-            <%= t('"Lorem ipsum dolor sit amet consectetur adipisicing elit."')
-            %>
+            " Professional and friendly staff, quality equipment... "
           </p>
         </div>
         <div class="centered row col-sm-12 col-md-4 mb-5">
-          <h5 class="centered col-sm-12 mt-4 josefin"><%= t('lalakis') %></h5>
+          <h5 class="centered col-sm-12 mt-4 josefin text-white">Aleksandar</h5>
           <p class="text-center blockquote col-sm-8">
-            <%= t('"Lorem ipsum dolor sit amet consectetur adipisicing elit."')
-            %>
+            " Amazing 3hour experience! One of the best during our vacation! "
           </p>
         </div>
         <div class="centered row col-sm-12 col-md-4 mb-5">
-          <h5 class="centered col-sm-12 mt-4 josefin"><%= t('maria') %></h5>
+          <h5 class="centered col-sm-12 mt-4 josefin text-white">Dionisis</h5>
           <p class="text-center blockquote col-sm-8">
-            <%= t('"Lorem ipsum dolor sit amet consectetur adipisicing elit."')
-            %>
+            " Captain Dimitris is really friendly and a true professional... "
           </p>
         </div>
       </div>
     </div>
   </div>
 
-  <div>
-    <h1>CONTACT</h1>
-  </div>
 </div>
 
 <%- include("partials/footer.ejs") %>
