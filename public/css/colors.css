@@ -1,0 +1,42 @@
+.scroll-to-top:hover {
+  color: #00a896 !important;
+}
+
+.scroll-to-top a :hover {
+  color: #00a896 !important;
+}
+
+.btn-purple {
+  color: #fff;
+  background-color: #6200ee;
+}
+
+.btn-purple:hover {
+  color: #fff;
+  background-color: #9e47ff;
+}
+
+.a.nav-link .active .btn-purple {
+  color: #fff;
+  background-color: #9e47ff;
+}
+
+.teal {
+  color: #03dac6;
+}
+
+.teal-darker {
+  color: #00a896;
+}
+
+.teal-darker-bg {
+  background-color: #00a896;
+}
+
+.purple-bg {
+  background-color: #6200ee;
+}
+
+.accent:hover {
+  background-color: #03dac6;
+}
