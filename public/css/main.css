@@ -95,6 +95,14 @@ body {
   .testimonials {
     height: 100vh !important;
   }
+
+  #footer{
+    top: 195vh !important;
+  }
+
+  #overlap-container-nomove{
+    top: 10vh !important;
+  }
 }
 
 #main-content {
@@ -118,6 +126,11 @@ body {
 #contact-carousel {
   max-height: 50vh;
   filter: brightness(60%);
+}
+
+#map{
+  height: 50vh;
+  width: 100%;
 }
 
 #image01 {

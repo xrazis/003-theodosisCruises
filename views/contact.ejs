@@ -1,22 +1,11 @@
 <%- include("partials/header.ejs") %>
-<!--  Map background-->
+<!-- Map background-->
 <div
   id="contact-carousel"
   class="carousel slide carousel-fade"
   data-ride="carousel"
 >
-  <div class="carousel-inner">
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12592.21466294518!2d20.7060836!3d37.9058083!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf70ea5e38d240842!2sTheodosis%20Cruises!5e0!3m2!1sen!2sgr!4v1584904141142!5m2!1sen!2sgr"
-      width="1920"
-      height="540"
-      frameborder="0"
-      style="border:0;"
-      allowfullscreen="no"
-      aria-hidden="false"
-      tabindex="0"
-    ></iframe>
-  </div>
+  <div class="carousel-inner container-fluid" id="map"></div>
 </div>
 
 <!-- Contact section-->
@@ -26,7 +15,7 @@
     <%= success %>
   </div>
   <% } %>
-  <div class="container" id="contact">
+  <div class="container pt-1" id="contact">
     <h2 class="centered col-12 mb-5">Contact</h2>
     <div class="centered col-12 mb-4">
       <form action="/contact" method="POST">
@@ -110,5 +99,26 @@
     </div>
   </div>
 </div>
+
+<script>
+  // Initialize and add the map
+  function initMap() {
+    // The location of Uluru
+    var uluru = { lat: 37.905831, lng: 20.706137 };
+    // The map, centered at Uluru
+    var map = new google.maps.Map(document.getElementById("map"), {
+      zoom: 14,
+      center: uluru
+    });
+    // The marker, positioned at Uluru
+    var marker = new google.maps.Marker({ position: uluru, map: map });
+  }
+</script>
+
+<script
+  async
+  defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDwLkOSyIf7aBD7FSeDEdHFP579c9pgzDk&callback=initMap"
+></script>
 
 <%- include("partials/footer.ejs") %>
