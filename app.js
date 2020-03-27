@@ -2,9 +2,11 @@ var bodyParser = require("body-parser"),
   express = require("express"),
   app = express(),
   i18next = require("i18next"),
+  flash = require("connect-flash"),
   i18nextMiddleware = require("i18next-express-middleware"),
   FilesystemBackend = require("i18next-node-fs-backend"),
-  expressSanitizer = require("express-sanitizer");
+  expressSanitizer = require("express-sanitizer"),
+  session = require('express-session');
 
 var indexRoute = require("./routes/index");
 var enTranslations = require("./locales/en.json");
@@ -20,6 +22,7 @@ app.use(
   })
 );
 app.use(expressSanitizer());
+app.use(flash());
 
 i18next
   .use(i18nextMiddleware.LanguageDetector)
@@ -40,6 +43,15 @@ i18next
     },
     saveMissing: true
   });
+
+app.use(
+  session({
+    cookie: { maxAge: 60000 },
+    secret: "woot",
+    resave: false,
+    saveUninitialized: false
+  })
+);
 
 app.use(i18nextMiddleware.handle(i18next));
 app.use("/", indexRoute);

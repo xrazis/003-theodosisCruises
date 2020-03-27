@@ -1,6 +1,6 @@
 var express = require("express"),
   nodemailer = require("nodemailer"),
-  router = express.Router();
+  router = express.Router({mergeParams: true});
 
 const creds = require("../config/cred");
 
@@ -46,10 +46,6 @@ router.get("/photos", function(req, res, next) {
   res.render("photos");
 });
 
-router.get("/contact", function(req, res, next) {
-  res.render("contact");
-});
-
 router.post("/contact", function(req, res) {
   var email = req.body.email;
   var name = req.body.name;
@@ -66,9 +62,14 @@ router.post("/contact", function(req, res) {
     if (err) {
       console.log(err);
     } else {
+      req.flash("success", "Successfully sent email!");
       res.redirect("contact");
     }
   });
+});
+
+router.get("/contact", function(req, res, next) {
+  res.render("contact", { success: req.flash('success') });
 });
 
 module.exports = router;

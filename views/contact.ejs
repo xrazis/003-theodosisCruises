@@ -20,7 +20,12 @@
 </div>
 
 <!-- Contact section-->
-<div class="rounded bg-light" id="overlap-container">
+<div class="rounded bg-light" id="overlap-container-nomove">
+  <% if (success.length) { %>
+  <div class="alert alert-success" role="alert">
+    <%= success %>
+  </div>
+  <% } %>
   <div class="container" id="contact">
     <h2 class="centered col-12 mb-5">Contact</h2>
     <div class="centered col-12 mb-4">
@@ -48,7 +53,6 @@
             class="form-control mt-3"
             name="message"
             id="validationTextarea"
-            placeholder="Message"
           >
           </textarea>
         </div>
