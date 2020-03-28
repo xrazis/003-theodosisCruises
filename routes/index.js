@@ -69,7 +69,7 @@ router.post("/contact", function(req, res) {
 });
 
 router.get("/contact", function(req, res, next) {
-  res.render("contact", { success: req.flash('success') });
+  res.render("contact", { success: req.flash('success'), apiKey: creds.APIKEY });
 });
 
 module.exports = router;
