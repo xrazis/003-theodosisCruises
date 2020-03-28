@@ -1,7 +1,7 @@
 html,
 body {
-  font-family: "Fira Sans", sans-serif !important;
-  font-weight: 200;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
   line-height: 1.65;
   color: #595959;
   background-color: #f2f2f2;
@@ -96,11 +96,11 @@ body {
     height: 100vh !important;
   }
 
-  #footer{
+  #footer {
     top: 195vh !important;
   }
 
-  #overlap-container-nomove{
+  #overlap-container-nomove {
     top: 10vh !important;
   }
 }
@@ -128,7 +128,7 @@ body {
   filter: brightness(60%);
 }
 
-#map{
+#map {
   height: 50vh;
   width: 100%;
 }
@@ -289,10 +289,12 @@ small,
 
 .josefin {
   font-family: "Josefin Sans";
+  font-weight: 400;
 }
 
 .navbar {
   transition: all 0.4s;
+  font-weight: 400 !important;
 }
 
 .navbar .nav-link {
@@ -320,7 +322,7 @@ small,
 }
 
 .navbar a.dropdown-item {
-  font-weight: 300;
+  font-weight: 400;
   color: #595959;
   background-color: none;
 }
@@ -353,7 +355,7 @@ small,
 }
 
 .navbar.active a.dropdown-item {
-  font-weight: 300;
+  font-weight: 400;
   color: #595959;
 }
 
