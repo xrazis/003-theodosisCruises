@@ -18,7 +18,7 @@ body {
     position: absolute;
     top: 0;
     right: 0;
-    width: 50%;
+    width: 70%;
     height: 100vh;
     background-color: #fff;
     -webkit-box-shadow: 0px 10px 29px -11px rgba(0, 0, 0, 0.75);
@@ -67,7 +67,7 @@ body {
   }
 
   .move-toggler {
-    right: 60%;
+    right: 80%;
   }
 
   .changeIcon {
@@ -96,12 +96,12 @@ body {
     height: 100vh !important;
   }
 
-  #footer {
-    top: 195vh !important;
+  #footer02 {
+    top: -190vh !important;
   }
 
   #overlap-container-nomove {
-    top: 10vh !important;
+    top: -25vh !important;
   }
 }
 
@@ -134,7 +134,7 @@ body {
 }
 
 #image01 {
-  background-image: url("https://images.unsplash.com/photo-1548678967-f1aec58f6fb2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1490&q=80");
+  background-image: url("/img/headers/header1.jpg");
   height: 100vh;
   width: auto;
   background-size: cover;
@@ -144,7 +144,7 @@ body {
 }
 
 #image02 {
-  background-image: url("https://images.unsplash.com/photo-1530996340436-66c2f1209ab9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+  background-image: url("/img/headers/header2.jpg");
   height: 100vh;
   width: auto;
   background-size: cover;
@@ -154,7 +154,7 @@ body {
 }
 
 #image03 {
-  background-image: url("https://images.unsplash.com/photo-1570015329194-675ae0cf2516?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+  background-image: url("/img/headers/header1.jpg");
   height: 100vh;
   width: auto;
   background-size: cover;
@@ -164,7 +164,7 @@ body {
 }
 
 #imageCruises01 {
-  background-image: url("https://images.unsplash.com/photo-1548161545-004d32bef83a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80");
+  background-image: url("/img/headers/cruises01.jpg");
   height: 50vh;
   width: auto;
   background-size: cover;
@@ -174,7 +174,7 @@ body {
 }
 
 #imageCruises02 {
-  background-image: url("https://images.unsplash.com/photo-1510755637548-70ca4dd352fd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+  background-image: url("/img/headers/cruises02.jpg");
   height: 50vh;
   width: auto;
   background-size: cover;
@@ -207,7 +207,7 @@ body {
 #overlap-container-nomove {
   z-index: 10;
   position: relative;
-  top: -10vh;
+  top: -18vh;
   width: 90%;
   left: 5%;
   padding-bottom: 0rem;
@@ -223,6 +223,18 @@ body {
 }
 
 #footer {
+  width: 100%;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+  padding: 2rem;
+  background-color: #f2f2f2;
+}
+
+#footer02 {
   width: 100%;
   right: 0;
   left: 0;
@@ -406,8 +418,8 @@ small,
 }
 
 .moveup {
-  top: -7rem !important;
-  margin-bottom: -7rem !important;
+  top: -10rem !important;
+  margin-bottom: -10rem !important;
 }
 
 .bmargint {
@@ -564,11 +576,9 @@ small,
   width: 100%;
   height: 100%;
   display: grid;
-  background-image: linear-gradient(
-      to bottom,
+  background-image: linear-gradient(to bottom,
       rgba(255, 255, 255, 0.2),
-      rgba(0, 0, 0, 0.8)
-    ),
+      rgba(0, 0, 0, 0.8)),
     url("https://images.unsplash.com/photo-1498937359365-9f6a4e94466f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
   background-size: cover;
   background-position: top;

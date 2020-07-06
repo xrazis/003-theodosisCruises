@@ -1,14 +1,16 @@
 var express = require("express"),
   nodemailer = require("nodemailer"),
-  router = express.Router({mergeParams: true});
+  router = express.Router({
+    mergeParams: true
+  });
 
 const creds = require("../config/cred");
 
 var transport = {
   host: "linux85.papaki.gr",
   auth: {
-    user: creds.USER,
-    pass: creds.PASS
+    user: creds.user,
+    pass: creds.pass
   }
 };
 
@@ -22,38 +24,34 @@ transporter.verify((error, success) => {
   }
 });
 
-router.get("/", function(req, res) {
+router.get("/", function (req, res) {
   res.redirect("/index");
 });
 
-router.get("/index", function(req, res, next) {
+router.get("/index", function (req, res, next) {
   res.render("index");
 });
 
-router.get("/bcaves", function(req, res, next) {
-  res.render("bcaves");
+router.get("/booking", function (req, res, next) {
+  res.render("booking");
 });
 
-router.get("/shipwreck", function(req, res, next) {
-  res.render("shipwreck");
-});
-
-router.get("/cruises", function(req, res, next) {
+router.get("/cruises", function (req, res, next) {
   res.render("cruises");
 });
 
-router.get("/photos", function(req, res, next) {
+router.get("/photos", function (req, res, next) {
   res.render("photos");
 });
 
-router.post("/contact", function(req, res) {
+router.post("/contact", function (req, res) {
   var email = req.body.email;
   var name = req.body.name;
   var message = req.body.message;
 
   var mail = {
     from: email,
-    to: "info@xrazis.com", //Change to email address that you want to receive messages on
+    to: "info@theodosiscruises.gr",
     subject: name,
     text: message
   };
@@ -68,8 +66,11 @@ router.post("/contact", function(req, res) {
   });
 });
 
-router.get("/contact", function(req, res, next) {
-  res.render("contact", { success: req.flash('success'), apiKey: creds.APIKEY });
+router.get("/contact", function (req, res, next) {
+  res.render("contact", {
+    success: req.flash('success'),
+    apiKey: creds.apikey
+  });
 });
 
 module.exports = router;

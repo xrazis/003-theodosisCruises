@@ -5,32 +5,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Theodosis Cruises</title>
-    
+
     <!--    Bootstrap CDN  -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
     <!--    Google Fonts  CDN   -->
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:200,400|Roboto:300,400&display=swap&subset=cyrillic" rel="stylesheet"> 
-    
+    <link
+        href="https://fonts.googleapis.com/css?family=Josefin+Sans:200,400|Roboto:300,400&display=swap&subset=cyrillic"
+        rel="stylesheet">
+
     <!-- Font Awesome and Google Material Icons CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
-    integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
+        integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    
+
     <!--    Local CSS -->
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/colors.css">
-    
+
 </head>
 
 <!--    Navbar  -->
+
 <body id="page-top">
     <div class="d-flex justify-content-end">
         <nav class="navbar navbar-expand-lg fixed-top">
             <div class="container d-flex pb-0">
                 <div>
-                    <a class="navbar-brand" id="logo" href="/index"><img src="img/logos/logo-main.png" alt="" class="logo-main"></a>
+                    <a class="navbar-brand" id="logo" href="/index"><img src="img/logos/logo-main.png" alt=""
+                            class="logo-main"></a>
                 </div>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target=" #navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -61,17 +65,11 @@
                             </a>
                         </li>
                         <hr class="sm-hr-rest">
-                        <li class="nav-item px-2 dropdown">
-                            <a class="nav-link" href="#" id="bookingDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="/booking">
                                 <span class="material-icons md-18 align-middle mr-1">style</span>
                                 <span class="align-middle pt-1 mr-1"><%= t('booking') %></span>
-                                <span class="material-icons md-18 align-middle mr-1">keyboard_arrow_down</span>
                             </a>
-                            <div class="dropdown-menu" aria-labelledby="bookingDropdown">
-                                <a class="dropdown-item accent" href="/bcaves"><%= t('bcaves') %></a>
-                                <a class="dropdown-item accent" href="/shipwreck"><%= t('shipwreck') %></a>
-                            </div>
                         </li>
                         <hr class="sm-hr-rest">
                         <li class="nav-item px-2">

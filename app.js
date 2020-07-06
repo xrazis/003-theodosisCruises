@@ -14,6 +14,8 @@ var elTranslations = require("./locales/el.json");
 var ruTranslations = require("./locales/ru.json");
 var jaTranslations = require("./locales/ja.json");
 
+const creds = require("../config/cred");
+
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
 app.use(
@@ -46,8 +48,10 @@ i18next
 
 app.use(
   session({
-    cookie: { maxAge: 60000 },
-    secret: "woot",
+    cookie: {
+      maxAge: 60000
+    },
+    secret: creds.secret,
     resave: false,
     saveUninitialized: false
   })
@@ -55,30 +59,6 @@ app.use(
 
 app.use(i18nextMiddleware.handle(i18next));
 app.use("/", indexRoute);
-
-// error handlers
-
-// development error handler
-// will print stacktrace
-// if (app.get("env") === "development") {
-//   app.use(function (err, req, res, next) {
-//     res.status(err.status || 500);
-//     res.render("error", {
-//       message: err.message,
-//       error: err
-//     });
-//   });
-// }
-
-// production error handler
-// no stacktraces leaked to user
-// app.use(function (err, req, res, next) {
-//   res.status(err.status || 500);
-//   res.render("error", {
-//     message: err.message,
-//     error: {}
-//   });
-// });
 
 //  live - plesk
 // const http = require("http");

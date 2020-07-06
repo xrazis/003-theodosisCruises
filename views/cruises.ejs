@@ -1,10 +1,6 @@
 <%- include("partials/header.ejs") %>
 <!-- Half image carousel-->
-<div
-  id="cruises-carousel"
-  class="carousel slide carousel-fade"
-  data-ride="carousel"
->
+<div id="cruises-carousel" class="carousel slide carousel-fade" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item w-100 active" id="imageCruises01"></div>
     <div class="carousel-item w-100" id="imageCruises02"></div>
@@ -21,9 +17,7 @@
         <div class="col-md-4 centered">
           <img
             src="https://images.unsplash.com/photo-1534423429435-66968ca17695?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
-            class="card-img cruises-image shadow-lg"
-            alt="..."
-          />
+            class="card-img cruises-image shadow-lg" alt="..." />
         </div>
         <div class="col-md-6 container centered text-center">
           <div class="card-body">
@@ -33,11 +27,9 @@
             </p>
             <p class="card-text cruises-info"><%= t('bcaves-info') %></p>
             <div class="container centered">
-              <a href="/bcaves"
-                ><button type="submit" class="btn btn-purple rounded-pill mt-4">
+              <a href="/booking"><button type="submit" class="btn btn-purple rounded-pill mt-4">
                   Blue Caves
-                </button></a
-              >
+                </button></a>
             </div>
           </div>
         </div>
@@ -56,20 +48,16 @@
             </p>
             <p class="card-text"><%= t('shipwreck-bcaves-info') %></p>
             <div class="container centered">
-              <a href="/shipwreck"
-                ><button type="submit" class="btn btn-purple rounded-pill mt-4">
+              <a href="/booking"><button type="submit" class="btn btn-purple rounded-pill mt-4">
                   Shipwreck
-                </button></a
-              >
+                </button></a>
             </div>
           </div>
         </div>
         <div class="col-md-4 centered">
           <img
             src="https://images.unsplash.com/photo-1568323800788-78f87a78e492?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
-            class="card-img cruises-image shadow-lg"
-            alt="..."
-          />
+            class="card-img cruises-image shadow-lg" alt="..." />
         </div>
       </div>
     </div>
