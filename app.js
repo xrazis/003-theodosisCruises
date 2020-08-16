@@ -14,7 +14,7 @@ var elTranslations = require("./locales/el.json");
 var ruTranslations = require("./locales/ru.json");
 var jaTranslations = require("./locales/ja.json");
 
-const creds = require("../config/cred");
+const creds = require("./config/cred");
 
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
@@ -66,4 +66,4 @@ app.use("/", indexRoute);
 
 //  local
 app.listen(3000, "127.0.0.1");
-console.log("SERVER IS RUNNING!");
+console.log("Server is up and running !");
